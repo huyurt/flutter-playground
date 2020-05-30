@@ -1,0 +1,11 @@
+~ git bash
+  cd C:/Users/~/AppData/Local
+  git clone https://github.com/flutter/flutter.git -b stable
+
+~ env
+  Create a new user variable named Path with the full path to flutter\bin as its value. (C:\Users\~\AppData\Local\flutter\bin)
+
+~ cmd
+  cd C:\Users\~\AppData\Local\flutter\bin
+  flutter doctor
+
