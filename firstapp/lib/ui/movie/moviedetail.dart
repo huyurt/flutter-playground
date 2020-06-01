@@ -2,6 +2,7 @@ import 'package:firstapp/model/movie.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:turkish/turkish.dart';
 
 class MovieListViewDetail extends StatelessWidget {
   final Movie movie;
@@ -123,7 +124,7 @@ class MovieDetailHeader extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Text(
-          '${movie.year} . ${movie.genre}'.toUpperCase(),
+          turkish.toUpperCase('${movie.year} . ${movie.genre}'),
           style: TextStyle(fontWeight: FontWeight.w400, color: Colors.cyan),
         ),
         Text(
@@ -218,7 +219,7 @@ class MovieDetailExtraPosters extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(left: 8.0),
           child: Text(
-            'More Movie Posters'.toUpperCase(),
+            turkish.toUpperCase('More Movie Posters'),
             style: TextStyle(
               fontSize: 14,
               color: Colors.black26,

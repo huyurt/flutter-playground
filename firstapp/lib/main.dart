@@ -1,3 +1,4 @@
+import 'package:firstapp/ui/fibonacci.dart';
 import 'package:firstapp/ui/home.dart';
 import 'package:firstapp/ui/scaffold.dart';
 import 'package:firstapp/ui/mycard.dart';
@@ -5,9 +6,11 @@ import 'package:firstapp/ui/info.dart';
 import 'package:firstapp/ui/tipcalculator.dart';
 import 'package:firstapp/ui/quize.dart';
 import 'package:firstapp/ui/movie/movie.dart';
+import 'package:firstapp/ui/json_parsing_map.dart';
+import 'package:firstapp/weather/weater.dart';
 import 'package:flutter/material.dart';
 
-//void main() => runApp(ScaffoldExample());
+//void main() => runApp(FibonacciExample());
 
 /*
 final ThemeData appTheme = buildAppTheme();
@@ -57,4 +60,4 @@ void main() =>
     ));
 */
 
-void main() => runApp(new MaterialApp(home: MovieListView()));
+void main() => runApp(new MaterialApp(home: Weather()));
