@@ -13,7 +13,6 @@ class Api {
             Util.appId;
 
     final response = await get(Uri.encodeFull(finalUrl));
-    print(response.statusCode);
     if (response.statusCode == 200) {
       return WeatherForecastModel.fromJson(json.decode(response.body));
     } else {

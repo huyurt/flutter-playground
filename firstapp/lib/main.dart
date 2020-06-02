@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:firstapp/ui/fibonacci.dart';
 import 'package:firstapp/ui/home.dart';
 import 'package:firstapp/ui/scaffold.dart';
@@ -8,6 +10,8 @@ import 'package:firstapp/ui/quize.dart';
 import 'package:firstapp/ui/movie/movie.dart';
 import 'package:firstapp/ui/json_parsing_map.dart';
 import 'package:firstapp/weather/weater.dart';
+import 'package:firstapp/map/simple_google_map/show_map.dart';
+import 'package:firstapp/map/quakes_map/quakes.dart';
 import 'package:flutter/material.dart';
 
 //void main() => runApp(FibonacciExample());
@@ -60,4 +64,15 @@ void main() =>
     ));
 */
 
-void main() => runApp(new MaterialApp(home: Weather()));
+class MyHttpOverrides extends HttpOverrides{
+  @override
+  HttpClient createHttpClient(SecurityContext context){
+    return super.createHttpClient(context)
+      ..badCertificateCallback = (X509Certificate cert, String host, int port)=> true;
+  }
+}
+
+void main() {
+  HttpOverrides.global = new MyHttpOverrides();
+  runApp(new MaterialApp(debugShowCheckedModeBanner: false, home: QuakesApp()));
+}
