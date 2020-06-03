@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "22634567182",
+    "firebase_url": "https://manageemp-2ce02.firebaseio.com",
+    "project_id": "manageemp-2ce02",
+    "storage_bucket": "manageemp-2ce02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22634567182:android:034173cf373bb89d70ce5f",
+        "android_client_info": {
+          "package_name": "com.example.firstapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "22634567182-68amu7vcgkhbmpfflv1cumdc242b2m2t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_nqyPQs5_Tg_J8QcaA3c96L4-qn4W4hI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "22634567182-68amu7vcgkhbmpfflv1cumdc242b2m2t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

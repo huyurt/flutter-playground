@@ -57,7 +57,7 @@ class _WeatherState extends State<Weather> {
       child: Container(
           child: TextField(
         decoration: InputDecoration(
-            hintText: 'Enter City Name',
+            hintText: 'Bir Yer Girin',
             prefixIcon: Icon(Icons.search),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10.0),

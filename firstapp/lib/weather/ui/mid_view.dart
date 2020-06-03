@@ -17,10 +17,8 @@ class MiddleView extends StatelessWidget {
     var forecast = forecastList[0];
     var city = snapshot.data.city.name;
     var country = snapshot.data.city.country;
-    print(forecast.dt);
     var formattedDate =
         new DateTime.fromMicrosecondsSinceEpoch(forecast.dt * 1000000);
-    print(formattedDate);
 
     return Container(
       child: Padding(
