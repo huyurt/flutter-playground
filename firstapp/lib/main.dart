@@ -13,6 +13,7 @@ import 'package:firstapp/weather/weater.dart';
 import 'package:firstapp/map/simple_google_map/show_map.dart';
 import 'package:firstapp/map/quakes_map/quakes.dart';
 import 'package:firstapp/board/board.dart';
+import 'file:///C:/Users/tekno_note5/Github/flutter-playground/firstapp/lib/joke/ui/master_detail_screen.dart';
 import 'package:flutter/material.dart';
 
 //void main() => runApp(FibonacciExample());
@@ -75,5 +76,12 @@ class MyHttpOverrides extends HttpOverrides{
 
 void main() {
   HttpOverrides.global = new MyHttpOverrides();
-  runApp(new MaterialApp(debugShowCheckedModeBanner: false, home: BoardApp()));
+//  runApp(new MaterialApp(debugShowCheckedModeBanner: false, home: BoardApp()));
+  runApp(new MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: new ThemeData(
+        primarySwatch: Colors.blue
+      ),
+      home: MasterDetailScreen(),
+  ));
 }
