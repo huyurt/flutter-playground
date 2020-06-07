@@ -117,7 +117,7 @@ class Properties {
   int felt;
   double cdi;
   double mmi;
-  int alert;
+  String alert;
   String status;
   int tsunami;
   int sig;
