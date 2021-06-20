@@ -7,4 +7,5 @@ class CurrentUserEntity with JsonConvert<CurrentUserEntity> {
 	late String username = '';
 	late String token = '';
 	late String expires = '';
+	late bool darkTheme = false;
 }

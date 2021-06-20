@@ -1,26 +1,21 @@
 import 'package:get/get.dart';
-import 'package:get_storage/get_storage.dart';
+import 'package:hive/hive.dart';
 import 'package:login/core/theme/app_theme.dart';
 import 'package:login/core/values/keys.dart';
 
 class ConfigService extends GetxService {
-  final message = ''.obs;
-  GetStorage? box;
+  final box = Hive.box(CURRENT_USER);
 
-  ConfigService() {
-    box = GetStorage(CURRENT_USER);
-  }
-
-  bool getTheme() => this.box?.read(THEME);
+  bool getTheme() => this.box.get(THEME, defaultValue: false);
 
   Future<ConfigService> init() async {
-    await box?.writeIfNull(THEME, false);
-    Get.changeTheme(box?.read(THEME) ? AppTheme.dark() : AppTheme.light());
+    Get.changeTheme(this.getTheme() ? AppTheme.dark() : AppTheme.light());
     return this;
   }
 
-  changeTheme(bool b) async {
+  changeTheme({bool? bb}) {
+    bool b = !(bb ?? this.getTheme());
     Get.changeTheme(b ? AppTheme.dark() : AppTheme.light());
-    await this.box?.write(THEME, b);
+    this.box.put(THEME, b);
   }
 }

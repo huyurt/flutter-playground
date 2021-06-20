@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:login/app/widgets/custom_button.dart';
 import 'package:login/app/widgets/custom_tff.dart';
 import 'package:login/core/values/keys.dart';
+import 'package:login/core/values/strings.dart';
 
 import 'login_controller.dart';
 
@@ -84,7 +85,7 @@ class LoginPage extends GetView<LoginController> {
                     callback: () async {
                       await this.controller.login();
                     },
-                    text: 'Giriş Yap'.tr,
+                    text: BUTTON_LOGIN.tr,
                   ),
                 ),
               ],

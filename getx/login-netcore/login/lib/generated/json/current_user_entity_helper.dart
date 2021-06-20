@@ -21,6 +21,9 @@ currentUserEntityFromJson(CurrentUserEntity data, Map<String, dynamic> json) {
 	if (json['expires'] != null) {
 		data.expires = json['expires'].toString();
 	}
+	if (json['darkTheme'] != null) {
+		data.darkTheme = bool.fromEnvironment(json['darkTheme'], defaultValue: false);
+	}
 	return data;
 }
 
@@ -32,5 +35,6 @@ Map<String, dynamic> currentUserEntityToJson(CurrentUserEntity entity) {
 	data['username'] = entity.username;
 	data['token'] = entity.token;
 	data['expires'] = entity.expires;
+	data['darkTheme'] = entity.darkTheme;
 	return data;
 }
