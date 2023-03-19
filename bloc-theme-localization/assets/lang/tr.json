@@ -1,0 +1,10 @@
+{
+  "app_bar_title": "Bloc Uygulaması",
+  "theme_selector_tooltip": "Tema seçimi",
+  "tab_posts_title": "Gönderiler",
+  "tab_search_title": "Arama",
+  "search_hint_text": "Aranacak terimi girin",
+  "search_no_result_message": "Sonuç Yok",
+  "search_failed_message": "Hata oluştu!",
+  "search_message": "Aramaya başlamayın"
+}

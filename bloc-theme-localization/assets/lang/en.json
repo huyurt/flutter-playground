@@ -1,0 +1,10 @@
+{
+  "app_bar_title": "Bloc Application",
+  "theme_selector_tooltip": "Theme selector",
+  "tab_posts_title": "Posts",
+  "tab_search_title": "Search",
+  "search_hint_text": "Enter a search term",
+  "search_no_result_message": "No Results",
+  "search_failed_message": "Failed to fetch posts",
+  "search_message": "Please enter a term to begin"
+}
