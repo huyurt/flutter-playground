@@ -37,7 +37,7 @@ class _SearchBarState extends State<_SearchBar> {
     _githubSearchBloc = context.read<GithubSearchBloc>();
     _textController = TextEditingController()
       ..addListener(() {
-        performFilter();
+        _performSearch();
       });
   }
 
@@ -47,12 +47,10 @@ class _SearchBarState extends State<_SearchBar> {
     super.dispose();
   }
 
-  void performFilter() {
-    Future.delayed(const Duration(milliseconds: 750), () async {
-      _githubSearchBloc.add(
-        TextChanged(text: _textController.text),
-      );
-    });
+  void _performSearch() {
+    _githubSearchBloc.add(
+      TextChanged(text: _textController.text),
+    );
   }
 
   @override
@@ -60,8 +58,6 @@ class _SearchBarState extends State<_SearchBar> {
     return TextField(
       controller: _textController,
       autocorrect: false,
-      onChanged: (text) {
-      },
       decoration: InputDecoration(
         prefixIcon: const Icon(Icons.search),
         suffixIcon: GestureDetector(

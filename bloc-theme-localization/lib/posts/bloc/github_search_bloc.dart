@@ -6,7 +6,7 @@ import '../models/search_result_error.dart';
 import 'github_search_event.dart';
 import 'github_search_state.dart';
 
-const _duration = Duration(milliseconds: 300);
+const _duration = Duration(milliseconds: 1000);
 
 EventTransformer<Event> debounce<Event>(Duration duration) {
   return (events, mapper) => events.debounce(duration).switchMap(mapper);

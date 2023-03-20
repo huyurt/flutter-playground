@@ -2,15 +2,7 @@
 
 Config theme and localization using bloc
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+<img height="500" style="float: left" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoWoP31BNJOjCOONs_9lZmFubPOdcynyjGLCogGekKcxIU-PC58tT46wX1Ov_6sqaE4xPMKsh8rpqeRK9cGfoO4949J3aeZU9GQqmoLL3UFxKvSN-duq1JxWLEzeNEvbE1cITEfYuGbreAT2seDXuJk-p-Wh5FA998BtBWjsj4tkxjay6WrQD_ZIkbyA/s1600/1679325740776.jpg"><img height="500" style="float: left" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE-QVbp60WE0_kHzXNqIlrZfemgQqNMBoVU3S-9gTDfadTQk74cGGb7Xi7qSFuMH51EeESBnD4BFpihGklGZ2GZCQlRlsKjN3e2TSucfGFXxmRoOIrvLL-beiIhoU1ElzJIVTJ1f8k7xIBPSQ033THf-RzhaPpGfKiMhYp2IuxX3f50NBxQ4rDqOIIRQ/s1600/1679325740768.jpg">
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
